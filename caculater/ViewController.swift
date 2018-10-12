@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var temp = 0
+    var flag = 0
     
     @IBOutlet weak var caculaterDisplay: UITextField!
     
@@ -54,14 +55,43 @@ class ViewController: UIViewController {
         caculaterDisplay.text = caculaterDisplay.text! + "0"
     }
     
+    @IBAction func buttonPoint(_ sender: Any) {
+        caculaterDisplay.text = caculaterDisplay.text! + "."
+    }
+    
     @IBAction func clear(_ sender: Any) {
         caculaterDisplay.text = ""
     }
     
     @IBAction func buttonCaculator(_ sender: Any) {
-        var sum = 0
-        sum = temp - Int(caculaterDisplay.text!)!
-        caculaterDisplay.text = "\(sum)"
+        if(flag==1)
+        {
+            
+             var sum = 0
+             sum = temp + Int(caculaterDisplay.text!)!
+             caculaterDisplay.text = "\(sum)"
+        }
+        if(flag==2)
+        {
+            var minus = 0
+            minus = temp - Int(caculaterDisplay.text!)!
+            caculaterDisplay.text = "\(minus)"
+            
+        }
+        if(flag==3)
+        {
+            var  multiply = 0
+            multiply = temp *  Int(caculaterDisplay.text!)!
+            caculaterDisplay.text = "\(multiply)"
+            
+        }
+        if(flag==4)
+        {
+            var divided = 0
+            divided = temp / Int(caculaterDisplay.text!)!
+            caculaterDisplay.text = "\(divided)"
+            
+        }
     }
     
     @IBAction func butterAdd(_ sender: Any) {
@@ -69,6 +99,7 @@ class ViewController: UIViewController {
             Int(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
+        flag = 1
     }
     
     @IBAction func butterMinus(_ sender: Any) {
@@ -76,6 +107,7 @@ class ViewController: UIViewController {
             Int(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
+        flag = 2
     }
     
     @IBAction func butterMultiply(_ sender: Any) {
@@ -83,6 +115,7 @@ class ViewController: UIViewController {
             Int(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
+        flag = 3
     }
     
     @IBAction func butterDivided(_ sender: Any) {
@@ -90,6 +123,7 @@ class ViewController: UIViewController {
             Int(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
+        flag = 4
     }
     
     override func viewDidLoad() {
