@@ -57,7 +57,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPoint(_ sender: Any) {
         caculaterDisplay.text = caculaterDisplay.text! + "."
-    }
+                                          }
     
     @IBAction func clear(_ sender: Any) {
         caculaterDisplay.text = ""
