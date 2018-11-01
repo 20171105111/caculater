@@ -193,7 +193,7 @@
                                     <action selector="buttonPoint:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tBs-0o-umU"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EuT-ma-jga">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EuT-ma-jga">
                                 <rect key="frame" x="55" y="96" width="319" height="30"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
