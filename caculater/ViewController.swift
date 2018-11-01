@@ -157,6 +157,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butterMinus(_ sender: Any) {
+         caculaterOperator = 2
         temp =
             Double(caculaterDisplay.text!)!
         
@@ -165,6 +166,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butterMultiply(_ sender: Any) {
+         caculaterOperator = 3
         temp =
             Double(caculaterDisplay.text!)!
         
@@ -173,6 +175,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butterDivided(_ sender: Any) {
+         caculaterOperator = 4
         temp =
             Double(caculaterDisplay.text!)!
         
