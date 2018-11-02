@@ -27,85 +27,48 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button2(_ sender: Any) {
-        if calFlag == 2{
             caculaterDisplay.text = caculaterDisplay.text! + "2"
-        }
-        else{
-            caculaterDisplay.text = "2"
-        }
-        calFlag = 2
     }
     
     @IBAction func button3(_ sender: Any) {
-        if calFlag == 3{
+        
             caculaterDisplay.text = caculaterDisplay.text! + "3"
-        }
-        else{
-            caculaterDisplay.text = "3"
-        }
-        calFlag = 3
         
     }
     
     @IBAction func button4(_ sender: Any) {
-        if calFlag == 4{
+        
             caculaterDisplay.text = caculaterDisplay.text! + "4"
-        }
-        else{
-            caculaterDisplay.text = "4"
-        }
-        calFlag = 4
+      
     }
     
     @IBAction func button5(_ sender: Any) {
-        if calFlag == 5{
+       
             caculaterDisplay.text = caculaterDisplay.text! + "5"
-        }
-        else{
-            caculaterDisplay.text = "5"
-        }
-        calFlag = 5
-    }
-    
-    @IBAction func button6(_ sender: Any) {
-        if calFlag == 6{
-            caculaterDisplay.text = caculaterDisplay.text! + "6"
-        }
-        else{
-            caculaterDisplay.text = "6"
-        }
-        calFlag = 6
-    }
-    
-    @IBAction func button7(_ sender: Any) {
-        if calFlag == 7{
-            caculaterDisplay.text = caculaterDisplay.text! + "7"
-        }
-        else{
-            caculaterDisplay.text = "7"
-        }
-        calFlag = 7
-    }
-    
-    @IBAction func button8(_ sender: Any) {
-        if calFlag == 8{
-            caculaterDisplay.text = caculaterDisplay.text! + "8"
-        }
-        else{
-            caculaterDisplay.text = "8"
-        }
-        calFlag = 8
         
     }
     
+    @IBAction func button6(_ sender: Any) {
+       
+            caculaterDisplay.text = caculaterDisplay.text! + "6"
+      
+    }
+    
+    @IBAction func button7(_ sender: Any) {
+      
+            caculaterDisplay.text = caculaterDisplay.text! + "7"
+      
+    }
+    
+    @IBAction func button8(_ sender: Any) {
+        
+            caculaterDisplay.text = caculaterDisplay.text! + "8"
+       
+    }
+    
     @IBAction func button9(_ sender: Any) {
-        if calFlag == 9{
+       
             caculaterDisplay.text = caculaterDisplay.text! + "9"
-        }
-        else{
-            caculaterDisplay.text = "9"
-        }
-        calFlag = 9
     }
     
     @IBAction func button0(_ sender: Any) {
