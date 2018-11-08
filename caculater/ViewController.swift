@@ -27,18 +27,36 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button2(_ sender: Any) {
+        if calFlag == 2{
             caculaterDisplay.text = caculaterDisplay.text! + "2"
+        }
+        else{
+            caculaterDisplay.text = "2"
+        }
+        calFlag = 2
     }
     
     @IBAction func button3(_ sender: Any) {
         
+        if calFlag == 3{
             caculaterDisplay.text = caculaterDisplay.text! + "3"
+        }
+        else{
+            caculaterDisplay.text = "3"
+        }
+        calFlag = 3
         
     }
     
     @IBAction func button4(_ sender: Any) {
         
+        if calFlag == 4{
             caculaterDisplay.text = caculaterDisplay.text! + "4"
+        }
+        else{
+            caculaterDisplay.text = "4"
+        }
+        calFlag = 4
       
     }
     
@@ -120,7 +138,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butterMinus(_ sender: Any) {
-         caculaterOperator = 2
+        caculaterOperator = 2
         temp =
             Double(caculaterDisplay.text!)!
         
@@ -129,7 +147,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butterMultiply(_ sender: Any) {
-         caculaterOperator = 3
+        caculaterOperator = 3
         temp =
             Double(caculaterDisplay.text!)!
         
@@ -138,7 +156,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butterDivided(_ sender: Any) {
-         caculaterOperator = 4
+        caculaterOperator = 4
         temp =
             Double(caculaterDisplay.text!)!
         
