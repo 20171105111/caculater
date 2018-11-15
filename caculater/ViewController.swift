@@ -104,6 +104,10 @@ class ViewController: UIViewController {
         caculaterDisplay.text = ""
     }
     
+    @IBAction func ButtonAllCleaar(_ sender: Any) {
+        
+        
+    }
     @IBAction func buttonCaculator(_ sender: Any) {
         if(caculaterOperator==1)
         {
@@ -162,6 +166,10 @@ class ViewController: UIViewController {
         
         caculaterDisplay.text =  ""
         calFlag = 1
+    }
+    
+    @IBAction func buttonPercent(_ sender: Any) {
+        
     }
     
     override func viewDidLoad() {
