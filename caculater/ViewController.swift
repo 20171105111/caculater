@@ -27,70 +27,60 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button2(_ sender: Any) {
-        if calFlag == 2{
-            caculaterDisplay.text = caculaterDisplay.text! + "2"
-        }
-        else{
-            caculaterDisplay.text = "2"
-        }
-        calFlag = 2
+        
+        caculaterDisplay.text = caculaterDisplay.text! + "2"
+        calFlag = 1
     }
     
     @IBAction func button3(_ sender: Any) {
         
-        if calFlag == 3{
-            caculaterDisplay.text = caculaterDisplay.text! + "3"
-        }
-        else{
-            caculaterDisplay.text = "3"
-        }
-        calFlag = 3
-        
+       
+        caculaterDisplay.text = caculaterDisplay.text! + "3"
+        calFlag = 1
     }
     
     @IBAction func button4(_ sender: Any) {
         
-        if calFlag == 4{
-            caculaterDisplay.text = caculaterDisplay.text! + "4"
-        }
-        else{
-            caculaterDisplay.text = "4"
-        }
-        calFlag = 4
-      
+       caculaterDisplay.text = caculaterDisplay.text! + "4"
+       calFlag = 1
     }
     
     @IBAction func button5(_ sender: Any) {
        
-            caculaterDisplay.text = caculaterDisplay.text! + "5"
+      
+        caculaterDisplay.text = caculaterDisplay.text! + "5"
+        calFlag = 1
         
     }
-    
     @IBAction func button6(_ sender: Any) {
        
-            caculaterDisplay.text = caculaterDisplay.text! + "6"
-      
+    
+        caculaterDisplay.text = caculaterDisplay.text! + "6"
+        calFlag = 1
     }
     
     @IBAction func button7(_ sender: Any) {
       
-            caculaterDisplay.text = caculaterDisplay.text! + "7"
-      
+        
+        caculaterDisplay.text = caculaterDisplay.text! + "7"
+        calFlag = 1
     }
     
     @IBAction func button8(_ sender: Any) {
         
-            caculaterDisplay.text = caculaterDisplay.text! + "8"
-       
+        caculaterDisplay.text = caculaterDisplay.text! + "8"
+        calFlag = 1
     }
     
     @IBAction func button9(_ sender: Any) {
        
-            caculaterDisplay.text = caculaterDisplay.text! + "9"
+        caculaterDisplay.text = caculaterDisplay.text! + "9"
+        calFlag = 1
     }
     
     @IBAction func button0(_ sender: Any) {
         caculaterDisplay.text = caculaterDisplay.text! + "0"
+        calFlag = 1
     }
     
     @IBAction func buttonPoint(_ sender: Any) {
@@ -106,7 +96,10 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonAllCleaar(_ sender: Any) {
         
-        
+        caculaterOperator = 0
+        calFlag = 0
+        temp = 0
+        caculaterDisplay.text = ""
     }
     @IBAction func buttonCaculator(_ sender: Any) {
         if(caculaterOperator==1)
@@ -147,7 +140,7 @@ class ViewController: UIViewController {
             Double(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
-        calFlag = 1
+        calFlag = 2
     }
     
     @IBAction func butterMultiply(_ sender: Any) {
@@ -156,7 +149,7 @@ class ViewController: UIViewController {
             Double(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
-        calFlag = 1
+        calFlag = 3
     }
     
     @IBAction func butterDivided(_ sender: Any) {
@@ -165,7 +158,7 @@ class ViewController: UIViewController {
             Double(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
-        calFlag = 1
+        calFlag = 4
     }
     
     @IBAction func buttonPercent(_ sender: Any) {
