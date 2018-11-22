@@ -122,6 +122,10 @@ class ViewController: UIViewController {
             
             caculaterDisplay.text = "\(temp  / Double(caculaterDisplay.text!)!)"
         }
+        if (caculaterOperator==5)
+        {
+            caculaterDisplay.text = "\(temp / 100)"
+        }
         
     }
     
@@ -162,6 +166,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonPercent(_ sender: Any) {
+        caculaterOperator = 5
+        temp =
+            Double(caculaterDisplay.text!)!
+        
+        caculaterDisplay.text =  ""
+        calFlag = 5
         
     }
     
