@@ -88,10 +88,8 @@ class ViewController: UIViewController {
                                           }
     
     @IBAction func clear(_ sender: Any) {
-        caculaterOperator = 0
-        calFlag = 0
-        temp = 0
-        caculaterDisplay.text = ""
+
+        caculaterDisplay.text?.removeLast()
     }
     
     @IBAction func ButtonAllCleaar(_ sender: Any) {
@@ -105,7 +103,9 @@ class ViewController: UIViewController {
         if(caculaterOperator==1)
         {
             
-             caculaterDisplay.text = "\(temp  + Double(caculaterDisplay.text!)!)"
+            var sum :Double = 0
+            sum = temp + Double(caculaterDisplay.text!)!
+             caculaterDisplay.text = "\(sum)"
         }
         if(caculaterOperator==2)
         {
@@ -135,7 +135,8 @@ class ViewController: UIViewController {
             Double(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
-        calFlag = 1
+        calFlag = 2
+        caculaterOperator = 1
     }
     
     @IBAction func butterMinus(_ sender: Any) {
@@ -145,6 +146,7 @@ class ViewController: UIViewController {
         
         caculaterDisplay.text =  ""
         calFlag = 2
+        caculaterOperator = 2
     }
     
     @IBAction func butterMultiply(_ sender: Any) {
@@ -153,7 +155,8 @@ class ViewController: UIViewController {
             Double(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
-        calFlag = 3
+        calFlag = 2
+        caculaterOperator = 3
     }
     
     @IBAction func butterDivided(_ sender: Any) {
@@ -162,7 +165,8 @@ class ViewController: UIViewController {
             Double(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
-        calFlag = 4
+        calFlag = 2
+        caculaterOperator = 4
     }
     
     @IBAction func buttonPercent(_ sender: Any) {
@@ -171,7 +175,8 @@ class ViewController: UIViewController {
             Double(caculaterDisplay.text!)!
         
         caculaterDisplay.text =  ""
-        calFlag = 5
+        calFlag = 2
+        caculaterOperator = 5
         
     }
     
