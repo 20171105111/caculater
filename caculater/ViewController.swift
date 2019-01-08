@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBAction func button1(_ sender: Any) {
         if calFlag == 1{
             caculaterDisplay.text = caculaterDisplay.text! + "1"
+            calFlag = 1
         }
         else{
             caculaterDisplay.text = "1"
@@ -28,58 +29,110 @@ class ViewController: UIViewController {
     
     @IBAction func button2(_ sender: Any) {
         
-        caculaterDisplay.text = caculaterDisplay.text! + "2"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "2"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "2"
+        }
         calFlag = 1
     }
     
     @IBAction func button3(_ sender: Any) {
-        
-       
-        caculaterDisplay.text = caculaterDisplay.text! + "3"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "3"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "3"
+        }
         calFlag = 1
     }
     
     @IBAction func button4(_ sender: Any) {
         
-       caculaterDisplay.text = caculaterDisplay.text! + "4"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "4"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "4"
+        }
        calFlag = 1
     }
     
     @IBAction func button5(_ sender: Any) {
        
       
-        caculaterDisplay.text = caculaterDisplay.text! + "5"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "5"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "5"
+        }
         calFlag = 1
         
     }
     @IBAction func button6(_ sender: Any) {
        
     
-        caculaterDisplay.text = caculaterDisplay.text! + "6"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "6"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "6"
+        }
         calFlag = 1
     }
     
     @IBAction func button7(_ sender: Any) {
       
         
-        caculaterDisplay.text = caculaterDisplay.text! + "7"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "7"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "7"
+        }
         calFlag = 1
     }
     
     @IBAction func button8(_ sender: Any) {
         
-        caculaterDisplay.text = caculaterDisplay.text! + "8"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "8"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "8"
+        }
         calFlag = 1
     }
     
     @IBAction func button9(_ sender: Any) {
        
-        caculaterDisplay.text = caculaterDisplay.text! + "9"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "9"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "9"
+        }
         calFlag = 1
     }
     
     @IBAction func button0(_ sender: Any) {
-        caculaterDisplay.text = caculaterDisplay.text! + "0"
+        if calFlag == 1{
+            caculaterDisplay.text = caculaterDisplay.text! + "0"
+            calFlag = 1
+        }
+        else{
+            caculaterDisplay.text = "0"
+        }
         calFlag = 1
     }
     
@@ -130,11 +183,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func butterAdd(_ sender: Any) {
-        caculaterOperator = 1
-        temp =
-            Double(caculaterDisplay.text!)!
+        if caculaterOperator == 1{
+        caculaterDisplay.text = "\(temp + Double(caculaterDisplay.text!)!)"
+        }
+        temp = Double(caculaterDisplay.text!)!
         
-        caculaterDisplay.text =  ""
+        //caculaterDisplay.text =  ""
         calFlag = 2
         caculaterOperator = 1
     }
